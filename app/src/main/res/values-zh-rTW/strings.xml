@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobileClaw</string>
+    <string name="app_name">ope_opaAgent</string>
     <string name="agent_service_standby">待命中</string>
     <string name="agent_service_processing">處理中\u2026</string>
-    <string name="accessibility_service_description">MobileClaw 使用無障礙服務來讀取和操作您的應用程式，讓 AI 能夠自動化任何應用程式中的任務。</string>
+    <string name="accessibility_service_description">ope_opaAgent 使用無障礙服務來讀取和操作您的應用程式，讓 AI 能夠自動化任何應用程式中的任務。</string>
 
     <!-- Bottom Nav -->
     <string name="nav_chat">對話</string>
@@ -73,7 +73,7 @@
     <string name="device_name_label">裝置名稱</string>
     <string name="device_name_placeholder">我的 Android 手機</string>
     <string name="device_accessibility_service">無障礙服務</string>
-    <string name="device_accessibility_enabled">已啟用 \u2014 MobileClaw 可以控制您的裝置</string>
+    <string name="device_accessibility_enabled">已啟用 \u2014 ope_opaAgent 可以控制您的裝置</string>
     <string name="device_accessibility_disabled">已停用 \u2014 UI 自動化需要此服務</string>
     <string name="device_enable">啟用</string>
 
@@ -89,11 +89,11 @@
     <!-- Settings About Page -->
     <string name="about_by_affiora">by CK Sun</string>
     <string name="about_android_agent">Android AI 助理</string>
-    <string name="about_description">MobileClaw 是一個 AI 驅動的助理，可以控制您的 Android 裝置、自動化任務，並與您喜愛的服務整合。</string>
+    <string name="about_description">ope_opaAgent 是一個 AI 驅動的助理，可以控制您的 Android 裝置、自動化任務，並與您喜愛的服務整合。</string>
 
     <!-- Chat Screen -->
-    <string name="chat_title">MobileClaw</string>
-    <string name="chat_placeholder">詢問 MobileClaw\u2026</string>
+    <string name="chat_title">ope_opaAgent</string>
+    <string name="chat_placeholder">詢問 ope_opaAgent\u2026</string>
     <string name="chat_search_placeholder">搜尋訊息\u2026</string>
     <string name="chat_status_connected">已連線</string>
     <string name="chat_status_processing">處理中\u2026</string>
@@ -135,7 +135,7 @@
     <string name="risk_high">高風險</string>
 
     <!-- Onboarding -->
-    <string name="onboarding_welcome_title">MobileClaw</string>
+    <string name="onboarding_welcome_title">ope_opaAgent</string>
     <string name="onboarding_welcome_subtitle">您的 AI 手機助理，使用自然語言自動化任務。</string>
     <string name="onboarding_get_started">開始使用</string>
     <string name="onboarding_connect_provider">連接您的 AI 供應商</string>
@@ -143,7 +143,7 @@
     <string name="onboarding_api_key_label">API 金鑰</string>
     <string name="onboarding_next">下一步</string>
     <string name="onboarding_permissions_title">權限</string>
-    <string name="onboarding_permissions_subtitle">MobileClaw 需要這些權限來自動化您手機上的任務。</string>
+    <string name="onboarding_permissions_subtitle">ope_opaAgent 需要這些權限來自動化您手機上的任務。</string>
     <string name="onboarding_grant_permissions">授予權限</string>
     <string name="onboarding_permissions_result">已授予 %1$d 項，已拒絕 %2$d 項。您可以稍後在設定中授予被拒絕的權限。</string>
     <string name="onboarding_continue">繼續</string>
@@ -151,7 +151,7 @@
     <string name="onboarding_choose_skills">選擇技能</string>
     <string name="onboarding_skills_subtitle">選擇您要啟用的內建技能，之後可隨時更改。</string>
     <string name="onboarding_ready">準備就緒！</string>
-    <string name="onboarding_ready_subtitle">MobileClaw 已設定完成，準備為您服務。開始對話以自動化您的第一個任務。</string>
+    <string name="onboarding_ready_subtitle">ope_opaAgent 已設定完成，準備為您服務。開始對話以自動化您的第一個任務。</string>
     <string name="onboarding_start_chatting">開始對話</string>
 
     <!-- Devices Screen -->

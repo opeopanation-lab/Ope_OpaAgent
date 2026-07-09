@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in MobileClaw, please report it responsibly.
+If you discover a security vulnerability in ope_opaAgent, please report it responsibly.
 
 **Email:** security@affiora.ai
 

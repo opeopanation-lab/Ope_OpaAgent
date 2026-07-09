@@ -2,7 +2,7 @@
 name: navigation
 description: Get directions, find places, and navigate using Google Maps
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: web, app, clipboard
 ---
 # Navigation

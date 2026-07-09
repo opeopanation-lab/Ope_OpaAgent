@@ -2,7 +2,7 @@
 name: real-estate
 description: Real estate agent daily workflow automation
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: sms, call_log, contacts, calendar
 ---
 # Real Estate Agent Assistant

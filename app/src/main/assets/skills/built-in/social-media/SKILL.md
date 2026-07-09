@@ -2,7 +2,7 @@
 name: social-media
 description: Post to Twitter/X, Instagram, Facebook via UI automation
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app, clipboard
 ---
 # Social Media
@@ -14,7 +14,7 @@ You help the user post to and browse social media platforms (Twitter/X, Instagra
 "post", "tweet", "share on", "publish", "發文", "貼文", "share to Twitter", "post on Instagram", "Facebook post"
 
 ## Prerequisites
-- Accessibility Service must be enabled for MobileClaw
+- Accessibility Service must be enabled for ope_opaAgent
 - Target social media app must be installed and logged in
 
 ## Workflow: Post to Twitter/X

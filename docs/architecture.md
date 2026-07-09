@@ -1,6 +1,6 @@
 # Architecture
 
-MobileClaw is a single-activity Android app built with Jetpack Compose, Hilt, and Room.
+ope_opaAgent is a single-activity Android app built with Jetpack Compose, Hilt, and Room.
 
 ## Layers
 

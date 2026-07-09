@@ -1,6 +1,6 @@
-# LiteLLM Proxy 接 MobileClaw CUSTOM Provider
+# LiteLLM Proxy 接 ope_opaAgent CUSTOM Provider
 
-> **TL;DR:** MobileClaw 的 CUSTOM provider 是 OpenAI-compat baseURL。LiteLLM Proxy 也是 OpenAI-compat gateway。把 baseURL 指過去即可,**零 code 改動**。
+> **TL;DR:** ope_opaAgent 的 CUSTOM provider 是 OpenAI-compat baseURL。LiteLLM Proxy 也是 OpenAI-compat gateway。把 baseURL 指過去即可,**零 code 改動**。
 
 LiteLLM Proxy 的價值在你已經有多家 provider 帳號(免費 tier、付費、本地 Ollama)時:
 - 跨 provider 自動 failover
@@ -53,7 +53,7 @@ litellm_settings:
   drop_params: true
 ```
 
-### 2. MobileClaw 設定
+### 2. ope_opaAgent 設定
 
 1. Settings → Provider → CUSTOM
 2. **Base URL**: `http://<your-host>:4000/v1`
@@ -62,14 +62,14 @@ litellm_settings:
 3. **API Key**: LiteLLM 的 master key(在 LiteLLM 的 `general_settings.master_key` 裡設)。如果沒設,任意字串(LiteLLM 默認不驗證)
 4. **Model ID**: 使用 `model_name` (`claude-primary`, `gpt-fallback` 等)
 
-LiteLLM 的 fallback 會自動接管:`claude-primary` 失敗時自動切 `gpt-fallback` → `gemini-fast` → `local-ollama`。MobileClaw 看到的只是「這次請求成功了」。
+LiteLLM 的 fallback 會自動接管:`claude-primary` 失敗時自動切 `gpt-fallback` → `gemini-fast` → `local-ollama`。ope_opaAgent 看到的只是「這次請求成功了」。
 
 ### 3. Tailscale 推薦
 
 如果你的 LiteLLM 跑在筆電,建議走 Tailscale:
 - 不需要 port forward
 - 免費 tier 個人帳號 OK
-- MobileClaw 的 NetworkMonitor 已經 VPN-aware(v1.2.x),不會誤判離線
+- ope_opaAgent 的 NetworkMonitor 已經 VPN-aware(v1.2.x),不會誤判離線
 
 ## 跟 In-app Failover 的差異
 
@@ -87,6 +87,6 @@ LiteLLM 的 fallback 會自動接管:`claude-primary` 失敗時自動切 `gpt-fa
 ## 故障排查
 
 - **連不到** → 檢查 LiteLLM 實際 listen interface (`--host 0.0.0.0` not `127.0.0.1`)
-- **TLS 錯誤** → MobileClaw cleartext config 已允許 LAN/Tailscale HTTP,但生產環境建議加 reverse proxy 走 HTTPS
+- **TLS 錯誤** → ope_opaAgent cleartext config 已允許 LAN/Tailscale HTTP,但生產環境建議加 reverse proxy 走 HTTPS
 - **streaming 不工作** → CUSTOM provider 走 OpenAI-compat,streaming 只有 OpenAI provider 的 sendMessage 才開,LiteLLM 自動降級為 buffered
 - **看不到 actual model** → 啟用 v1.2.12 的 Provider Failover 顯示 `actualProviderId` / `actualModelId`,可看到 LiteLLM 路由結果

@@ -2,7 +2,7 @@
 name: ui-fallback
 description: When no dedicated tool exists for a task, use the ui tool with AccessibilityService to control phone apps directly
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app, screen
 ---
 # UI Fallback — Do Anything Via Accessibility
@@ -31,7 +31,7 @@ When the user asks to do something and NO dedicated tool exists for it, use the 
 3. Read the screen: `ui` action="read_screen"
 4. Click the shutter button: `ui` action="click" text="Shutter" (or look for the capture button by index)
 5. Wait for photo to save: `ui` action="wait" seconds=2
-6. Return to MobileClaw: `ui` action="launch_and_wait" package_name="ai.affiora.mobileclaw.debug"
+6. Return to ope_opaAgent: `ui` action="launch_and_wait" package_name="ai.affiora.ope_opaAgent.debug"
 7. Report: "Photo taken and saved to gallery."
 
 ### Record a Video
@@ -40,7 +40,7 @@ When the user asks to do something and NO dedicated tool exists for it, use the 
 3. Click record button
 4. Wait desired duration
 5. Click stop button
-6. Return to MobileClaw
+6. Return to ope_opaAgent
 
 ### Reply to a Message in WhatsApp/LINE/Telegram
 1. `app` action="launch" package_name="com.whatsapp" (or jp.naver.line.android, org.telegram.messenger)
@@ -48,23 +48,23 @@ When the user asks to do something and NO dedicated tool exists for it, use the 
 3. `ui` action="click" text="<contact name>" — open the conversation
 4. `ui` action="type" text="<reply message>" — type the reply
 5. `ui` action="click" text="Send" — send it
-6. Return to MobileClaw
+6. Return to ope_opaAgent
 
 ### Open Settings and Change Something
 1. `app` action="launch" package_name="com.android.settings"
 2. `ui` action="read_screen" — see what's on screen
 3. Navigate by clicking items and reading screen until you reach the target setting
 4. Make the change
-5. Return to MobileClaw
+5. Return to ope_opaAgent
 
 ### Check Something in a Specific App
 1. Launch the app
 2. Read the screen to find the information
-3. Return to MobileClaw with the result
+3. Return to ope_opaAgent with the result
 
 ## Tips
 - Always `read_screen` BEFORE clicking anything — know what's on screen first
 - If you can't find a button by text, use index from the read_screen output
 - Wait 1-2 seconds after actions for the UI to update
-- Always return to MobileClaw when done
+- Always return to ope_opaAgent when done
 - If the camera app name varies by device, try common ones: com.google.android.GoogleCamera, com.sec.android.app.camera (Samsung), com.android.camera2

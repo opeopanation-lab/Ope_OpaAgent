@@ -2,7 +2,7 @@
 name: self-learning
 description: Create and manage custom skills to automate new workflows
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: skills_author
 ---
 # Self-Learning

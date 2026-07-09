@@ -1,0 +1,168 @@
+package ai.affiora.ope_opaAgent.ui.onboarding
+
+import ai.affiora.ope_opaAgent.agent.AiProvider
+import ai.affiora.ope_opaAgent.data.prefs.UserPreferences
+import ai.affiora.ope_opaAgent.skills.Skill
+import ai.affiora.ope_opaAgent.skills.SkillsManager
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+data class OnboardingUiState(
+    val currentStep: Int = 0,
+    val selectedProvider: AiProvider = AiProvider.ANTHROPIC,
+    val apiKey: String = "",
+    val apiKeyError: String? = null,
+    val availableSkills: List<SkillSelectionItem> = emptyList(),
+    val isCompleting: Boolean = false,
+)
+
+data class SkillSelectionItem(
+    val skill: Skill,
+    val isSelected: Boolean,
+)
+
+@HiltViewModel
+class OnboardingViewModel @Inject constructor(
+    private val userPreferences: UserPreferences,
+    private val skillsManager: SkillsManager,
+) : ViewModel() {
+
+    private val _uiState = MutableStateFlow(OnboardingUiState())
+    val uiState: StateFlow<OnboardingUiState> = _uiState.asStateFlow()
+
+    companion object {
+        const val TOTAL_STEPS = 5
+        private val BUILT_IN_SKILL_IDS = setOf("phone-basics", "morning-routine")
+    }
+
+    init {
+        loadAvailableSkills()
+    }
+
+    private fun loadAvailableSkills() {
+        val allSkills = skillsManager.getAllSkills()
+        val builtInSkills = allSkills.filter { it.id in BUILT_IN_SKILL_IDS }
+        val skillItems = if (builtInSkills.isNotEmpty()) {
+            builtInSkills.map { skill ->
+                SkillSelectionItem(skill = skill, isSelected = true)
+            }
+        } else {
+            BUILT_IN_SKILL_IDS.map { id ->
+                SkillSelectionItem(
+                    skill = Skill(
+                        id = id,
+                        name = id.replace("-", " ").replaceFirstChar { it.uppercase() },
+                        description = when (id) {
+                            "phone-basics" -> "Basic phone operations: calls, messages, contacts"
+                            "morning-routine" -> "Automated morning briefing and routine tasks"
+                            else -> ""
+                        },
+                        version = "1.0",
+                        author = "ope_opaAgent",
+                        toolsRequired = emptyList(),
+                        content = "",
+                    ),
+                    isSelected = true,
+                )
+            }
+        }
+        _uiState.update { it.copy(availableSkills = skillItems) }
+    }
+
+    fun onProviderChanged(provider: AiProvider) {
+        _uiState.update {
+            it.copy(
+                selectedProvider = provider,
+                apiKey = "",
+                apiKeyError = null,
+            )
+        }
+    }
+
+    fun onApiKeyChanged(key: String) {
+        _uiState.update {
+            it.copy(
+                apiKey = key,
+                apiKeyError = null,
+            )
+        }
+    }
+
+    fun onToggleSkill(skillId: String) {
+        _uiState.update { state ->
+            state.copy(
+                availableSkills = state.availableSkills.map { item ->
+                    if (item.skill.id == skillId) {
+                        item.copy(isSelected = !item.isSelected)
+                    } else {
+                        item
+                    }
+                }
+            )
+        }
+    }
+
+    fun goToStep(step: Int) {
+        if (step in 0 until TOTAL_STEPS) {
+            _uiState.update { it.copy(currentStep = step) }
+        }
+    }
+
+    fun nextStep(): Boolean {
+        val state = _uiState.value
+        // Validate API key on step 1 -> 2 transition
+        // Skip for: local providers (no key), Custom (key optional, set in Settings)
+        if (state.currentStep == 1
+            && !state.selectedProvider.isLocal
+            && !state.selectedProvider.requiresCustomBaseUrl) {
+            if (state.apiKey.isBlank()) {
+                _uiState.update { it.copy(apiKeyError = "API key is required") }
+                return false
+            }
+        }
+        if (state.currentStep < TOTAL_STEPS - 1) {
+            _uiState.update { it.copy(currentStep = state.currentStep + 1) }
+            return true
+        }
+        return false
+    }
+
+    fun previousStep() {
+        val state = _uiState.value
+        if (state.currentStep > 0) {
+            _uiState.update { it.copy(currentStep = state.currentStep - 1) }
+        }
+    }
+
+    fun completeOnboarding(onComplete: () -> Unit) {
+        val state = _uiState.value
+        _uiState.update { it.copy(isCompleting = true) }
+
+        viewModelScope.launch {
+            val provider = state.selectedProvider
+            if (!provider.isLocal) {
+                userPreferences.setTokenForProvider(provider.id, state.apiKey)
+            }
+            userPreferences.setSelectedProvider(provider.id)
+            // CUSTOM provider has empty models — user sets the model in Settings → CustomProviderCard
+            provider.models.firstOrNull()?.let { userPreferences.setSelectedModel(it.id) }
+
+            val selectedIds = state.availableSkills
+                .filter { it.isSelected }
+                .map { it.skill.id }
+                .toSet()
+            userPreferences.setActiveSkillIds(selectedIds)
+
+            userPreferences.setOnboardingCompleted(true)
+
+            onComplete()
+        }
+    }
+}

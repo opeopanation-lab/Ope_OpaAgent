@@ -2,7 +2,7 @@
 name: photos
 description: Find, view, and share photos from your gallery
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app
 ---
 # Photos
@@ -15,7 +15,7 @@ You help the user find, view, and share photos from their gallery using Google P
 
 ## Prerequisites
 - Google Photos app must be installed
-- Accessibility Service must be enabled for MobileClaw
+- Accessibility Service must be enabled for ope_opaAgent
 
 ## Workflow: Browse Recent Photos
 

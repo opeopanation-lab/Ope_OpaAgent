@@ -2,7 +2,7 @@
 name: telegram-bot
 description: Send and receive Telegram messages via your bot
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: telegram
 ---
 

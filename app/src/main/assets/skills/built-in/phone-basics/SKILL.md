@@ -2,7 +2,7 @@
 name: phone-basics
 description: Basic phone operations - SMS, calls, contacts
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: sms, call_log, contacts
 ---
 # Phone Basics

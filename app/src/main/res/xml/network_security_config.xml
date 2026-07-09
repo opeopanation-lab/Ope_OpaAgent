@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Network security config for MobileClaw.
+  Network security config for ope_opaAgent.
 
   Android 9+ blocks cleartext HTTP by default. Cloud AI providers use HTTPS
   and are unaffected. But self-hosted servers (Ollama, LM Studio, vLLM)

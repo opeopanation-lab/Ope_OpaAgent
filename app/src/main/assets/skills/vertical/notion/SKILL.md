@@ -2,7 +2,7 @@
 name: notion
 description: Search, read, and create Notion pages and databases
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: http
 ---
 # Notion Integration
@@ -10,7 +10,7 @@ tools_required: http
 You help the user manage their Notion workspace — search pages, read content, create new pages, and query databases. All API calls go through the http tool.
 Keywords: "notion", "note", "筆記", "create page", "wiki", "database"
 ## Setup
-The user must configure their Notion API token in MobileClaw Settings. This is an internal integration token from https://www.notion.so/my-integrations.
+The user must configure their Notion API token in ope_opaAgent Settings. This is an internal integration token from https://www.notion.so/my-integrations.
 - Token location: Settings > API Keys > Notion
 - The integration must be shared with any pages/databases the user wants to access (via Notion's "Connect to" menu on a page)
 ## API Configuration

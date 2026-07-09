@@ -2,7 +2,7 @@
 name: notification-digest
 description: Summarize and organize recent notifications by app and priority
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: notifications
 ---
 # Notification Digest

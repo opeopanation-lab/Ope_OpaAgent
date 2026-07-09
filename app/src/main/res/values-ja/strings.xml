@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobileClaw</string>
+    <string name="app_name">ope_opaAgent</string>
     <string name="agent_service_standby">待機中</string>
     <string name="agent_service_processing">処理中\u2026</string>
-    <string name="accessibility_service_description">MobileClawはアクセシビリティを使用して、アプリの読み取りと操作を行います。これにより、AIがあらゆるアプリでタスクを自動化できます。</string>
+    <string name="accessibility_service_description">ope_opaAgentはアクセシビリティを使用して、アプリの読み取りと操作を行います。これにより、AIがあらゆるアプリでタスクを自動化できます。</string>
 
     <!-- Bottom Nav -->
     <string name="nav_chat">チャット</string>
@@ -73,7 +73,7 @@
     <string name="device_name_label">デバイス名</string>
     <string name="device_name_placeholder">マイAndroidスマホ</string>
     <string name="device_accessibility_service">アクセシビリティサービス</string>
-    <string name="device_accessibility_enabled">有効 \u2014 MobileClawがデバイスを制御できます</string>
+    <string name="device_accessibility_enabled">有効 \u2014 ope_opaAgentがデバイスを制御できます</string>
     <string name="device_accessibility_disabled">無効 \u2014 UI自動化に必要です</string>
     <string name="device_enable">有効にする</string>
 
@@ -89,11 +89,11 @@
     <!-- Settings About Page -->
     <string name="about_by_affiora">by CK Sun</string>
     <string name="about_android_agent">Android AIエージェント</string>
-    <string name="about_description">MobileClawはAI搭載のエージェントで、Androidデバイスの制御、タスクの自動化、お気に入りのサービスとの連携が可能です。</string>
+    <string name="about_description">ope_opaAgentはAI搭載のエージェントで、Androidデバイスの制御、タスクの自動化、お気に入りのサービスとの連携が可能です。</string>
 
     <!-- Chat Screen -->
-    <string name="chat_title">MobileClaw</string>
-    <string name="chat_placeholder">MobileClawに質問\u2026</string>
+    <string name="chat_title">ope_opaAgent</string>
+    <string name="chat_placeholder">ope_opaAgentに質問\u2026</string>
     <string name="chat_search_placeholder">メッセージを検索\u2026</string>
     <string name="chat_status_connected">接続済み</string>
     <string name="chat_status_processing">処理中\u2026</string>
@@ -135,7 +135,7 @@
     <string name="risk_high">高リスク</string>
 
     <!-- Onboarding -->
-    <string name="onboarding_welcome_title">MobileClaw</string>
+    <string name="onboarding_welcome_title">ope_opaAgent</string>
     <string name="onboarding_welcome_subtitle">自然言語でタスクを自動化するAI搭載スマホアシスタント。</string>
     <string name="onboarding_get_started">始める</string>
     <string name="onboarding_connect_provider">AIプロバイダーに接続</string>
@@ -143,7 +143,7 @@
     <string name="onboarding_api_key_label">APIキー</string>
     <string name="onboarding_next">次へ</string>
     <string name="onboarding_permissions_title">権限</string>
-    <string name="onboarding_permissions_subtitle">MobileClawがスマホでタスクを自動化するために、これらの権限が必要です。</string>
+    <string name="onboarding_permissions_subtitle">ope_opaAgentがスマホでタスクを自動化するために、これらの権限が必要です。</string>
     <string name="onboarding_grant_permissions">権限を許可</string>
     <string name="onboarding_permissions_result">%1$d件許可、%2$d件拒否。拒否した権限は後で設定から許可できます。</string>
     <string name="onboarding_continue">続ける</string>
@@ -151,7 +151,7 @@
     <string name="onboarding_choose_skills">スキルを選択</string>
     <string name="onboarding_skills_subtitle">有効にする内蔵スキルを選択してください。後で変更できます。</string>
     <string name="onboarding_ready">準備完了！</string>
-    <string name="onboarding_ready_subtitle">MobileClawの設定が完了しました。会話を始めて最初のタスクを自動化しましょう。</string>
+    <string name="onboarding_ready_subtitle">ope_opaAgentの設定が完了しました。会話を始めて最初のタスクを自動化しましょう。</string>
     <string name="onboarding_start_chatting">チャットを開始</string>
 
     <!-- Devices Screen -->

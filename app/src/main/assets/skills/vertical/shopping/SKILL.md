@@ -2,7 +2,7 @@
 name: shopping
 description: Search products, compare prices, and track orders
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: web, ui, app
 ---
 # Shopping & Price Comparison
@@ -126,4 +126,4 @@ When the user wants to monitor a price:
 - When comparing prices, note if items are genuine/official vs third-party sellers
 - For electronics, check warranty terms across sellers
 - If a deal seems too good to be true, warn the user about potential scams
-- Always return to MobileClaw after finishing app interactions
+- Always return to ope_opaAgent after finishing app interactions

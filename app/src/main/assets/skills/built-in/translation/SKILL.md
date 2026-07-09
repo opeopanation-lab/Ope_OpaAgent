@@ -2,7 +2,7 @@
 name: translation
 description: Translate text between languages, copy results to clipboard
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: clipboard
 ---
 # Translation

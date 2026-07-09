@@ -2,7 +2,7 @@
 name: smart-home
 description: Control smart home devices via Home Assistant
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: http
 ---
 # Smart Home (Home Assistant) Integration
@@ -13,7 +13,7 @@ Keywords: "turn on light", "turn off light", "smart home", "home assistant", "é–
 The user needs:
 1. A running Home Assistant instance (local or Nabu Casa cloud)
 2. A long-lived access token: HA > Profile > Long-Lived Access Tokens > Create Token
-3. Configure in MobileClaw Settings:
+3. Configure in ope_opaAgent Settings:
    - HA URL: e.g., `http://192.168.1.100:8123` or `https://xxxxx.ui.nabu.casa`
    - HA Token: the long-lived access token
 ## API Configuration

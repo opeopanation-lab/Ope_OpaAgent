@@ -23,5 +23,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MobileClaw"
+rootProject.name = "ope_opaAgent"
 include(":app")

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobileClaw</string>
+    <string name="app_name">ope_opaAgent</string>
     <string name="agent_service_standby">Bereitschaft</string>
     <string name="agent_service_processing">Verarbeitung\u2026</string>
-    <string name="accessibility_service_description">MobileClaw nutzt Barrierefreiheit, um Ihre Apps zu lesen und zu bedienen. Dies erm\u00f6glicht der KI, Aufgaben in jeder App zu automatisieren.</string>
+    <string name="accessibility_service_description">ope_opaAgent nutzt Barrierefreiheit, um Ihre Apps zu lesen und zu bedienen. Dies erm\u00f6glicht der KI, Aufgaben in jeder App zu automatisieren.</string>
 
     <!-- Bottom Nav -->
     <string name="nav_chat">Chat</string>
@@ -73,7 +73,7 @@
     <string name="device_name_label">Ger\u00e4tename</string>
     <string name="device_name_placeholder">Mein Android-Telefon</string>
     <string name="device_accessibility_service">Barrierefreiheitsdienst</string>
-    <string name="device_accessibility_enabled">Aktiviert \u2014 MobileClaw kann Ihr Ger\u00e4t steuern</string>
+    <string name="device_accessibility_enabled">Aktiviert \u2014 ope_opaAgent kann Ihr Ger\u00e4t steuern</string>
     <string name="device_accessibility_disabled">Deaktiviert \u2014 erforderlich f\u00fcr UI-Automatisierung</string>
     <string name="device_enable">Aktivieren</string>
 
@@ -89,11 +89,11 @@
     <!-- Settings About Page -->
     <string name="about_by_affiora">von CK Sun</string>
     <string name="about_android_agent">Android-KI-Agent</string>
-    <string name="about_description">MobileClaw ist ein KI-gest\u00fctzter Agent, der Ihr Android-Ger\u00e4t steuern, Aufgaben automatisieren und sich in Ihre Lieblingsdienste integrieren kann.</string>
+    <string name="about_description">ope_opaAgent ist ein KI-gest\u00fctzter Agent, der Ihr Android-Ger\u00e4t steuern, Aufgaben automatisieren und sich in Ihre Lieblingsdienste integrieren kann.</string>
 
     <!-- Chat Screen -->
-    <string name="chat_title">MobileClaw</string>
-    <string name="chat_placeholder">MobileClaw fragen\u2026</string>
+    <string name="chat_title">ope_opaAgent</string>
+    <string name="chat_placeholder">ope_opaAgent fragen\u2026</string>
     <string name="chat_search_placeholder">Nachrichten suchen\u2026</string>
     <string name="chat_status_connected">Verbunden</string>
     <string name="chat_status_processing">Verarbeitung\u2026</string>
@@ -135,7 +135,7 @@
     <string name="risk_high">Hohes Risiko</string>
 
     <!-- Onboarding -->
-    <string name="onboarding_welcome_title">MobileClaw</string>
+    <string name="onboarding_welcome_title">ope_opaAgent</string>
     <string name="onboarding_welcome_subtitle">Ihr KI-gest\u00fctzter Telefonassistent, der Aufgaben in nat\u00fcrlicher Sprache automatisiert.</string>
     <string name="onboarding_get_started">Loslegen</string>
     <string name="onboarding_connect_provider">KI-Anbieter verbinden</string>
@@ -143,7 +143,7 @@
     <string name="onboarding_api_key_label">API-Schl\u00fcssel</string>
     <string name="onboarding_next">Weiter</string>
     <string name="onboarding_permissions_title">Berechtigungen</string>
-    <string name="onboarding_permissions_subtitle">MobileClaw ben\u00f6tigt diese Berechtigungen, um Aufgaben auf Ihrem Telefon zu automatisieren.</string>
+    <string name="onboarding_permissions_subtitle">ope_opaAgent ben\u00f6tigt diese Berechtigungen, um Aufgaben auf Ihrem Telefon zu automatisieren.</string>
     <string name="onboarding_grant_permissions">Berechtigungen erteilen</string>
     <string name="onboarding_permissions_result">%1$d gew\u00e4hrt, %2$d abgelehnt. Abgelehnte Berechtigungen k\u00f6nnen sp\u00e4ter in den Einstellungen erteilt werden.</string>
     <string name="onboarding_continue">Weiter</string>
@@ -151,7 +151,7 @@
     <string name="onboarding_choose_skills">F\u00e4higkeiten w\u00e4hlen</string>
     <string name="onboarding_skills_subtitle">W\u00e4hlen Sie die integrierten F\u00e4higkeiten, die Sie aktivieren m\u00f6chten. Sie k\u00f6nnen diese sp\u00e4ter \u00e4ndern.</string>
     <string name="onboarding_ready">Bereit!</string>
-    <string name="onboarding_ready_subtitle">MobileClaw ist konfiguriert und bereit, Ihnen zu helfen. Starten Sie ein Gespr\u00e4ch, um Ihre erste Aufgabe zu automatisieren.</string>
+    <string name="onboarding_ready_subtitle">ope_opaAgent ist konfiguriert und bereit, Ihnen zu helfen. Starten Sie ein Gespr\u00e4ch, um Ihre erste Aufgabe zu automatisieren.</string>
     <string name="onboarding_start_chatting">Chat starten</string>
 
     <!-- Devices Screen -->

@@ -2,7 +2,7 @@
 name: email
 description: Read, search, compose, and reply to emails via Gmail app
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app, notifications
 ---
 # Email
@@ -15,7 +15,7 @@ You help the user read, search, compose, and reply to emails using the Gmail app
 
 ## Prerequisites
 - Gmail app must be installed and signed in
-- Accessibility Service must be enabled for MobileClaw
+- Accessibility Service must be enabled for ope_opaAgent
 
 ## Workflow: Read Inbox
 

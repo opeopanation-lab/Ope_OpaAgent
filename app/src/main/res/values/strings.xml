@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobileClaw</string>
-    <string name="agent_service_title">MobileClaw</string>
+    <string name="app_name">ope_opaAgent</string>
+    <string name="agent_service_title">ope_opaAgent</string>
     <string name="agent_service_standby">Standby</string>
     <string name="agent_service_processing">Processing\u2026</string>
-    <string name="accessibility_service_description">MobileClaw uses accessibility to read and interact with apps on your behalf. This enables the AI to automate tasks across any app.</string>
+    <string name="accessibility_service_description">ope_opaAgent uses accessibility to read and interact with apps on your behalf. This enables the AI to automate tasks across any app.</string>
 
     <!-- Bottom Nav -->
     <string name="nav_chat">Chat</string>
@@ -74,7 +74,7 @@
     <string name="device_name_label">Device name</string>
     <string name="device_name_placeholder">My Android Phone</string>
     <string name="device_accessibility_service">Accessibility Service</string>
-    <string name="device_accessibility_enabled">Enabled \u2014 MobileClaw can control your device</string>
+    <string name="device_accessibility_enabled">Enabled \u2014 ope_opaAgent can control your device</string>
     <string name="device_accessibility_disabled">Disabled \u2014 required for UI automation</string>
     <string name="device_enable">Enable</string>
 
@@ -90,11 +90,11 @@
     <!-- Settings About Page -->
     <string name="about_by_affiora">by CK Sun</string>
     <string name="about_android_agent">Android AI Agent</string>
-    <string name="about_description">MobileClaw is an AI-powered agent that can control your Android device, automate tasks, and integrate with your favorite services.</string>
+    <string name="about_description">ope_opaAgent is an AI-powered agent that can control your Android device, automate tasks, and integrate with your favorite services.</string>
 
     <!-- Chat Screen -->
-    <string name="chat_title">MobileClaw</string>
-    <string name="chat_placeholder">Ask MobileClaw\u2026</string>
+    <string name="chat_title">ope_opaAgent</string>
+    <string name="chat_placeholder">Ask ope_opaAgent\u2026</string>
     <string name="chat_search_placeholder">Search messages\u2026</string>
     <string name="chat_status_connected">Connected</string>
     <string name="chat_status_processing">Processing\u2026</string>
@@ -136,7 +136,7 @@
     <string name="risk_high">High Risk</string>
 
     <!-- Onboarding -->
-    <string name="onboarding_welcome_title">MobileClaw</string>
+    <string name="onboarding_welcome_title">ope_opaAgent</string>
     <string name="onboarding_welcome_subtitle">Your AI-powered phone assistant that automates tasks using natural language.</string>
     <string name="onboarding_get_started">Get Started</string>
     <string name="onboarding_connect_provider">Connect Your AI Provider</string>
@@ -144,7 +144,7 @@
     <string name="onboarding_api_key_label">API Key</string>
     <string name="onboarding_next">Next</string>
     <string name="onboarding_permissions_title">Permissions</string>
-    <string name="onboarding_permissions_subtitle">MobileClaw needs these permissions to automate tasks on your phone.</string>
+    <string name="onboarding_permissions_subtitle">ope_opaAgent needs these permissions to automate tasks on your phone.</string>
     <string name="onboarding_grant_permissions">Grant Permissions</string>
     <string name="onboarding_permissions_result">%1$d granted, %2$d denied. You can grant denied permissions later in Settings.</string>
     <string name="onboarding_continue">Continue</string>
@@ -152,7 +152,7 @@
     <string name="onboarding_choose_skills">Choose Skills</string>
     <string name="onboarding_skills_subtitle">Select the built-in skills you want to enable. You can change these later.</string>
     <string name="onboarding_ready">Ready!</string>
-    <string name="onboarding_ready_subtitle">MobileClaw is configured and ready to assist you. Start a conversation to automate your first task.</string>
+    <string name="onboarding_ready_subtitle">ope_opaAgent is configured and ready to assist you. Start a conversation to automate your first task.</string>
     <string name="onboarding_start_chatting">Start Chatting</string>
 
     <!-- Devices Screen -->

@@ -2,7 +2,7 @@
 name: telegram
 description: Send and receive Telegram messages via Bot API
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: http
 ---
 # Telegram Bot Integration
@@ -14,7 +14,7 @@ The user needs a Telegram Bot token:
 1. Open Telegram and message @BotFather
 2. Send `/newbot` and follow the prompts to create a bot
 3. Copy the bot token (format: `123456789:ABCdefGhIjKlMnOpQrStUvWxYz`)
-4. Configure the token in MobileClaw Settings > API Keys > Telegram
+4. Configure the token in ope_opaAgent Settings > API Keys > Telegram
 5. The user must start a conversation with their bot (send `/start`) before the bot can message them
 6. To find the user's chat_id, use the getUpdates workflow below after sending `/start` to the bot
 ## API Configuration
@@ -35,7 +35,7 @@ The user needs their chat_id to receive messages.
 ### Send a Text Message
 1. Simple message via GET:
    ```
-   http GET https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text=Hello%20from%20MobileClaw&parse_mode=Markdown
+   http GET https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text=Hello%20from%20ope_opaAgent&parse_mode=Markdown
    ```
 2. For longer or formatted messages, use POST:
    ```

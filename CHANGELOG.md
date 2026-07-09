@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to MobileClaw will be documented in this file.
+All notable changes to ope_opaAgent will be documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [1.1.0] - 2026-04-07

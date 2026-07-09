@@ -2,7 +2,7 @@
 name: finance
 description: Check balances and transactions via banking apps (UI automation)
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app, notifications
 ---
 # Finance & Banking
@@ -44,9 +44,9 @@ Open a banking app and read the balance.
    ```
 4. Extract the balance amount from the screen
 5. Report the balance to the user verbally
-6. Return to MobileClaw:
+6. Return to ope_opaAgent:
    ```
-   app action="launch" package="com.mobileclaw.app"
+   app action="launch" package="com.ope_opaAgent.app"
    ```
 ### Check Recent Transactions
 1. Launch banking app and authenticate (same as above)
@@ -66,7 +66,7 @@ Open a banking app and read the balance.
    ui action="read_screen"
    ```
 6. Present transactions in a clean list format
-7. Return to MobileClaw
+7. Return to ope_opaAgent
 ### Check Credit Card Statement
 1. Launch banking or credit card app
 2. Navigate to credit card section:
@@ -82,7 +82,7 @@ Open a banking app and read the balance.
 4. Extract: total amount due, payment due date, minimum payment
 5. If user wants details, navigate into the statement and read individual charges
 6. Report summary to user
-7. Return to MobileClaw
+7. Return to ope_opaAgent
 ### Check Stock / Investment Portfolio
 1. Launch investment app:
    ```
@@ -101,7 +101,7 @@ Open a banking app and read the balance.
    ```
 3. Extract: stock name/code, quantity, current price, gain/loss
 4. Present portfolio summary with total value and daily change
-5. Return to MobileClaw
+5. Return to ope_opaAgent
 ### Monitor Delivery Notifications for Financial Apps
 Track bank notifications for transactions.
 1. Use notifications tool to read recent financial notifications:
@@ -125,7 +125,7 @@ Check balances across multiple banks.
 - Read data, report it verbally, then forget it — no persistent storage of financial data
 - If a banking app has an anti-screenshot/anti-automation policy, respect it and tell the user
 - Some banking apps may detect accessibility service usage and block it — inform the user if this happens
-- Always return to MobileClaw after finishing with a banking app
+- Always return to ope_opaAgent after finishing with a banking app
 - For currency, default to NT$ (New Taiwan Dollar) unless the user specifies otherwise
 - Round amounts appropriately — don't show excessive decimal places for display currencies
 - If the user asks about transfers or payments, guide them but let them perform the actual action manually

@@ -2,7 +2,7 @@
 name: health
 description: Check health data, step count, and fitness stats
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app, system
 ---
 # Health & Fitness
@@ -40,9 +40,9 @@ Use the device's built-in step counter if available.
    ui action="tap" element={journal_tab}
    ui action="read_screen"
    ```
-6. Return to MobileClaw:
+6. Return to ope_opaAgent:
    ```
-   app action="launch" package="com.mobileclaw.app"
+   app action="launch" package="com.ope_opaAgent.app"
    ```
 ### Check Steps and Activity (via Samsung Health)
 1. Launch Samsung Health:
@@ -64,7 +64,7 @@ Use the device's built-in step counter if available.
    ui action="read_screen"
    ```
 5. Extract daily/weekly/monthly step data
-6. Return to MobileClaw
+6. Return to ope_opaAgent
 ### Check Heart Rate
 1. Launch fitness app (Google Fit or Samsung Health)
 2. Navigate to heart rate section:
@@ -76,7 +76,7 @@ Use the device's built-in step counter if available.
 3. Extract: latest reading, resting heart rate, daily range
 4. If a wearable is connected, data should be recent
 5. If no recent data: "Your last heart rate reading was X bpm at {time}. For a new reading, please use your wearable or the app's manual measurement."
-6. Return to MobileClaw
+6. Return to ope_opaAgent
 ### Check Sleep Data
 1. Launch fitness app
 2. Navigate to sleep section:
@@ -87,7 +87,7 @@ Use the device's built-in step counter if available.
    ```
 3. Extract: total sleep time, bedtime, wake time, sleep stages (light, deep, REM) if available
 4. Present a summary: "Last night you slept 7h 23m (11:15 PM - 6:38 AM). Deep sleep: 1h 45m, REM: 1h 30m."
-5. Return to MobileClaw
+5. Return to ope_opaAgent
 ### Check Weight / Body Composition
 1. Launch fitness app
 2. Navigate to weight/body metrics:
@@ -98,7 +98,7 @@ Use the device's built-in step counter if available.
    ```
 3. Extract: current weight, BMI, trend (gaining/losing), body fat % if available
 4. Report with context: "Your current weight is XX kg, down 0.5 kg from last week."
-5. Return to MobileClaw
+5. Return to ope_opaAgent
 ### Log a Workout (via App)
 Help the user start or log a workout.
 1. Launch fitness app
@@ -164,4 +164,4 @@ Simple reminder workflow (no API needed).
 - Always report data with timestamps so user knows how current it is
 - Use metric units (kg, km) by default for Taiwan users; switch to imperial if user prefers
 - Don't give medical advice — report data objectively and suggest consulting a doctor for concerns
-- Always return to MobileClaw after checking health apps
+- Always return to ope_opaAgent after checking health apps

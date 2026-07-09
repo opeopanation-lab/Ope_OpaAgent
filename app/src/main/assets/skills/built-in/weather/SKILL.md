@@ -2,7 +2,7 @@
 name: weather
 description: Get current weather and forecasts for any location
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: web
 ---
 # Weather

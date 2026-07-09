@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobileClaw</string>
+    <string name="app_name">ope_opaAgent</string>
     <string name="agent_service_standby">En attente</string>
     <string name="agent_service_processing">Traitement\u2026</string>
-    <string name="accessibility_service_description">MobileClaw utilise l\'accessibilit\u00e9 pour lire et interagir avec vos applications. Cela permet \u00e0 l\'IA d\'automatiser des t\u00e2ches dans n\'importe quelle application.</string>
+    <string name="accessibility_service_description">ope_opaAgent utilise l\'accessibilit\u00e9 pour lire et interagir avec vos applications. Cela permet \u00e0 l\'IA d\'automatiser des t\u00e2ches dans n\'importe quelle application.</string>
 
     <!-- Bottom Nav -->
     <string name="nav_chat">Discussion</string>
@@ -73,7 +73,7 @@
     <string name="device_name_label">Nom de l\'appareil</string>
     <string name="device_name_placeholder">Mon t\u00e9l\u00e9phone Android</string>
     <string name="device_accessibility_service">Service d\'accessibilit\u00e9</string>
-    <string name="device_accessibility_enabled">Activ\u00e9 \u2014 MobileClaw peut contr\u00f4ler votre appareil</string>
+    <string name="device_accessibility_enabled">Activ\u00e9 \u2014 ope_opaAgent peut contr\u00f4ler votre appareil</string>
     <string name="device_accessibility_disabled">D\u00e9sactiv\u00e9 \u2014 requis pour l\'automatisation UI</string>
     <string name="device_enable">Activer</string>
 
@@ -89,11 +89,11 @@
     <!-- Settings About Page -->
     <string name="about_by_affiora">par CK Sun</string>
     <string name="about_android_agent">Agent IA Android</string>
-    <string name="about_description">MobileClaw est un agent aliment\u00e9 par l\'IA qui peut contr\u00f4ler votre appareil Android, automatiser des t\u00e2ches et s\'int\u00e9grer \u00e0 vos services pr\u00e9f\u00e9r\u00e9s.</string>
+    <string name="about_description">ope_opaAgent est un agent aliment\u00e9 par l\'IA qui peut contr\u00f4ler votre appareil Android, automatiser des t\u00e2ches et s\'int\u00e9grer \u00e0 vos services pr\u00e9f\u00e9r\u00e9s.</string>
 
     <!-- Chat Screen -->
-    <string name="chat_title">MobileClaw</string>
-    <string name="chat_placeholder">Demandez \u00e0 MobileClaw\u2026</string>
+    <string name="chat_title">ope_opaAgent</string>
+    <string name="chat_placeholder">Demandez \u00e0 ope_opaAgent\u2026</string>
     <string name="chat_search_placeholder">Rechercher des messages\u2026</string>
     <string name="chat_status_connected">Connect\u00e9</string>
     <string name="chat_status_processing">Traitement\u2026</string>
@@ -135,7 +135,7 @@
     <string name="risk_high">Risque \u00e9lev\u00e9</string>
 
     <!-- Onboarding -->
-    <string name="onboarding_welcome_title">MobileClaw</string>
+    <string name="onboarding_welcome_title">ope_opaAgent</string>
     <string name="onboarding_welcome_subtitle">Votre assistant t\u00e9l\u00e9phonique IA qui automatise les t\u00e2ches en langage naturel.</string>
     <string name="onboarding_get_started">Commencer</string>
     <string name="onboarding_connect_provider">Connectez votre fournisseur IA</string>
@@ -143,7 +143,7 @@
     <string name="onboarding_api_key_label">Cl\u00e9 API</string>
     <string name="onboarding_next">Suivant</string>
     <string name="onboarding_permissions_title">Permissions</string>
-    <string name="onboarding_permissions_subtitle">MobileClaw a besoin de ces permissions pour automatiser les t\u00e2ches sur votre t\u00e9l\u00e9phone.</string>
+    <string name="onboarding_permissions_subtitle">ope_opaAgent a besoin de ces permissions pour automatiser les t\u00e2ches sur votre t\u00e9l\u00e9phone.</string>
     <string name="onboarding_grant_permissions">Accorder les permissions</string>
     <string name="onboarding_permissions_result">%1$d accord\u00e9es, %2$d refus\u00e9es. Vous pouvez accorder les permissions refus\u00e9es plus tard dans les Param\u00e8tres.</string>
     <string name="onboarding_continue">Continuer</string>
@@ -151,7 +151,7 @@
     <string name="onboarding_choose_skills">Choisir les comp\u00e9tences</string>
     <string name="onboarding_skills_subtitle">S\u00e9lectionnez les comp\u00e9tences int\u00e9gr\u00e9es que vous souhaitez activer. Vous pourrez les modifier plus tard.</string>
     <string name="onboarding_ready">Pr\u00eat !</string>
-    <string name="onboarding_ready_subtitle">MobileClaw est configur\u00e9 et pr\u00eat \u00e0 vous assister. D\u00e9marrez une conversation pour automatiser votre premi\u00e8re t\u00e2che.</string>
+    <string name="onboarding_ready_subtitle">ope_opaAgent est configur\u00e9 et pr\u00eat \u00e0 vous assister. D\u00e9marrez une conversation pour automatiser votre premi\u00e8re t\u00e2che.</string>
     <string name="onboarding_start_chatting">D\u00e9marrer la discussion</string>
 
     <!-- Devices Screen -->

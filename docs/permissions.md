@@ -1,6 +1,6 @@
 # Permissions
 
-MobileClaw requests the following Android permissions. Each is used by a specific tool.
+ope_opaAgent requests the following Android permissions. Each is used by a specific tool.
 
 | Permission | Tool | Why |
 |-----------|------|-----|
@@ -28,5 +28,5 @@ MobileClaw requests the following Android permissions. Each is used by a specifi
 
 | Permission | How to Enable | Why |
 |-----------|--------------|-----|
-| `BIND_ACCESSIBILITY_SERVICE` | Settings > Accessibility > MobileClaw | Read and interact with any app's UI |
+| `BIND_ACCESSIBILITY_SERVICE` | Settings > Accessibility > ope_opaAgent | Read and interact with any app's UI |
 | `BIND_NOTIFICATION_LISTENER_SERVICE` | Settings > Notifications > Notification access | Read notifications from all apps |

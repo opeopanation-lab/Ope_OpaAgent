@@ -2,7 +2,7 @@
 name: web-research
 description: Search the web and read pages to answer questions
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: web
 ---
 # Web Research

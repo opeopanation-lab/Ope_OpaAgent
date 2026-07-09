@@ -2,7 +2,7 @@
 name: messaging-apps
 description: Send and read messages in WhatsApp, LINE, Telegram via UI automation
 version: "1.0"
-author: MobileClaw Built-in
+author: ope_opaAgent Built-in
 tools_required: ui, app, notifications, clipboard
 ---
 # Messaging Apps
@@ -14,7 +14,7 @@ You help the user send and read messages in WhatsApp, LINE, and Telegram using U
 "message", "WhatsApp", "LINE", "Telegram", "text someone", "send a message", "傳訊息", "傳 Line", "發訊息"
 
 ## Prerequisites
-- Accessibility Service must be enabled for MobileClaw
+- Accessibility Service must be enabled for ope_opaAgent
 - Target messaging app must be installed and logged in
 
 ## Workflow: Send a WhatsApp Message

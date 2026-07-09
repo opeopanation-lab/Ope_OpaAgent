@@ -1,4 +1,4 @@
-# MobileClaw ProGuard Rules
+# ope_opaAgent ProGuard Rules
 
 # Kotlin Metadata (R8 compat with Kotlin 2.2+)
 -dontwarn kotlin.Metadata
@@ -10,11 +10,11 @@
 -keepclasseswithmembers class kotlinx.serialization.json.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
--keep,includedescriptorclasses class ai.affiora.mobileclaw.**$$serializer { *; }
--keepclassmembers class ai.affiora.mobileclaw.** {
+-keep,includedescriptorclasses class ai.affiora.ope_opaAgent.**$$serializer { *; }
+-keepclassmembers class ai.affiora.ope_opaAgent.** {
     *** Companion;
 }
--keepclasseswithmembers class ai.affiora.mobileclaw.** {
+-keepclasseswithmembers class ai.affiora.ope_opaAgent.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 
@@ -66,4 +66,4 @@
 -dontwarn com.google.ai.edge.litertlm.**
 
 # Keep data classes used by serialization
--keep class ai.affiora.mobileclaw.data.model.** { *; }
+-keep class ai.affiora.ope_opaAgent.data.model.** { *; }

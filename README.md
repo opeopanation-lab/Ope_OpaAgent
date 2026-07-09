@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/images/logo.png" width="100" alt="MobileClaw">
+  <img src="docs/images/logo.png" width="100" alt="ope_opaAgent">
 </p>
 
-<h1 align="center">MobileClaw</h1>
+<h1 align="center">ope_opaAgent</h1>
 
 <p align="center">
   <strong>Your phone is the agent.</strong><br>
@@ -20,22 +20,22 @@
   <a href="#quick-start">Quick Start</a> &bull;
   <a href="#on-device-ai">On-Device AI</a> &bull;
   <a href="#tools">Tools</a> &bull;
-  <a href="https://chenkuansun.github.io/MobileClaw/">Website</a>
+  <a href="https://chenkuansun.github.io/ope_opaAgent/">Website</a>
 </p>
 
 ---
 
-MobileClaw is the Android port of [OpenClaw](https://github.com/openclaw/openclaw). It turns your phone into an AI agent — tell it what to do in your own language and it taps, types, reads, calls, and navigates for you. Runs with **cloud AI** (Claude, GPT, Gemini, 10 providers) or **entirely offline** with Gemma 4 on-device.
+ope_opaAgent is the Android port of [OpenClaw](https://github.com/openclaw/openclaw). It turns your phone into an AI agent — tell it what to do in your own language and it taps, types, reads, calls, and navigates for you. Runs with **cloud AI** (Claude, GPT, Gemini, 10 providers) or **entirely offline** with Gemma 4 on-device.
 
 No server. No subscription. Your phone does everything.
 
 <p align="center">
-  <img src="docs/images/demo.gif" width="270" alt="MobileClaw Demo">
+  <img src="docs/images/demo.gif" width="270" alt="ope_opaAgent Demo">
 </p>
 
-## Why MobileClaw?
+## Why ope_opaAgent?
 
-| | MobileClaw | Other AI Assistants |
+| | ope_opaAgent | Other AI Assistants |
 |---|---|---|
 | **Runs on your phone** | Everything local. No backend. | Requires cloud servers |
 | **Controls any app** | AccessibilityService taps, swipes, types in ANY app | Limited to their own UI |
@@ -85,7 +85,7 @@ Create your own: describe what you want, and the AI writes the skill for you (`/
 
 ```bash
 git clone https://github.com/ChenKuanSun/mobileClaw.git
-cd MobileClaw
+cd ope_opaAgent
 ./gradlew assembleDebug
 ```
 
